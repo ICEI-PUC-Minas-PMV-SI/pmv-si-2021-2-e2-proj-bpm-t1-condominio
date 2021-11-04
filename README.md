@@ -29,10 +29,6 @@
 
 ## Histórico de versões
 
-* 0.1.1
-    * CHANGE: Atualização da documentação. Código permaneceu inalterado.
-* 0.1.0
-    * Implementação da funcionalidade X pertencente ao processo P.
-* 0.0.1
-    * Trabalhando na modelagem do processo de negócio.
+  - **1.0.0**
+> **Documentação Inicial (Github) | 03/11/2021**
 
