@@ -119,4 +119,38 @@ Assim sendo, é possível através da plataforma trazer celeridade ao processo d
   
 ![Imagem](/codigo/images/TOBE/areaLazer.png)
   
+**4. Projeto da arquitetura de dados da solução proposta**
+
+  - **4.1. Diagrama de Entidades e Relacionamentos (DER)**
+  
+![Imagem](/codigo/images/outros/der.png)
+  
+  - **4.2. Impactos da implementação em um banco de dados NoSQL**
+  
+NoSQL (refere-se também a “Não só SQL”, “Não SQL” ou “não relacional”) é um banco de dados que fornece uma maneira de gerenciar os dados que estão em uma forma não relacional, ou seja, que não está estruturado de forma tabular e não possui relações tabulares.
+Esse tipo de banco de dados vem ganhando popularidade cada vez mais à medida que é empregado em aplicativos de big data e tempo real. Os bancos de dados NoSQL são escaláveis, de alto desempenho e flexíveis por natureza. Suas estruturas são completamente diferentes daquelas dos bancos de dados relacionais. Nesses os dados são colocados em tabelas e a estrutura de dados é projetada antes de o banco de dados ser criado.
+Algumas diferenças entre Banco de Dados NoSQL e SQL:
+  
+**NoSQL** | **SQL**
+------------ | -------------
+São principalmente bancos de dados não relacionais ou distribuídos. Tecnologia relativamente nova. | São principalmente bancos de dados relacionais (RDBMS). Tecnologia madura e consolidada. NoSQL podem ser baseados em documentos, pares de valores-chave, gráficos ou colunas e não precisam seguir as definições de esquema padrão.
+Os bancos de dados SQL são baseados em tabelas na forma de linhas e colunas e devem seguir estritamente as definições de esquema padrão. | Eles são a melhor opção para aplicativos que precisam de transações com várias linhas.
+Eles têm o esquema dinâmico para dados não estruturados. Os dados podem ser armazenados de forma flexível sem ter uma estrutura predefinida.|Eles têm um esquema predefinido bem projetado para dados estruturados.
+Os bancos de dados NoSQL favorecem o esquema desnormalizado.|Os bancos de dados SQL favorecem o esquema normalizado.
+Mais barato para escalar quando comparado a bancos de dados relacionais.|Escalabilidade cara.
+Os bancos de dados NoSQL são escalonáveis horizontalmente.| Os bancos de dados SQL são escalonáveis verticalmente.
+Não é um bom ajuste para consultas complexas, pois não existe uma interface padrão no NoSQL para lidar com consultas. As consultas no NoSQL não são tão poderosas quanto as consultas SQL. É chamado de UnQL e a sintaxe para usar a linguagem de consulta não estruturada varia de sintaxe para sintaxe.|Eles são adequados para consultas complexas, pois o SQL tem uma interface padrão para lidar com consultas. A sintaxe das consultas SQL é fixa.
+Os bancos de dados NoSQL seguem corretamente o teorema do CAP de Brewers (consistência, disponibilidade e tolerância de partição).|Os bancos de dados SQL seguem corretamente as propriedades ACID (Atomicidade, Consistência, Isolamento e Durabilidade).
+Você pode usar o NoSQL para fins transacionais pesados. No entanto, não é a melhor opção para isso.| Melhor ajuste para aplicativos baseados em altas transações.
+Exemplos de bancos de dados NoSQL: MongoDB, Apache CouchDB, Redis, HBase. | Exemplo de bancos de dados SQL: MySQL, Oracle, MS-SQL, PostgreSQL.
+  
+Percebe-se com as diferenças acima que os bancos de dados possuem características próprias e propósitos específicos. Enquanto os bancos de dados NoSQL buscam trabalhar com grandes volumes de dados com uma arquitetura eficiente e escalável, os bancos de dados SQL seguem padrões bem definidos como ISI e ANSI, que são aceitos em todo o mundo, além de usarem linguagem padronizada única, ou seja, SQL em diferentes RDBMS (Sistema de Gerenciamento de Banco de Dados Relacional), além disso as transações em bancos de dados SQL são compatíveis ACID (Atomicidade, Consistência, Isolamento e Durabilidade), o que garante segurança e estabilidade.
+Conforme apresentamos as diferenças entre NoSQL e SQL. A escolha do banco de dados dependerá de preferências, requisitos de negócios, volume e variedade de dados.
+Os bancos de dados NoSQL estão ganhando grande popularidade atualmente devido à sua capacidade de integrar big data, baixo custo, fácil escalabilidade e recursos de código aberto. No entanto, ainda é uma tecnologia relativamente nova e carece de padronização, ao contrário do SQL. A falta de conformidade com o ACID também é uma preocupação com o NoSQL.
+Após o cotejamento entre os bancos de dados NoSQL e SQL, seus propósitos e aplicabilidades, e devido às preocupações quanto à segurança e estabilidade, o projeto condomínio, por ser um sistema transacional, não encontra nos bancos de dados NoSQL alguns requisitos fundamentais para sua adoção. Sendo assim, os bancos de dados relacionais possuem maior aderência ao negócio.
+  
+  - **4.3. Modelo relacional**
+  
+![Imagem](/codigo/images/outros/mer.png)
+  
 </div>
