@@ -10,9 +10,10 @@
   <a href="documentacao/README.md" rel="docs"><strong>Explore a documentação »</strong></a>
 </p>
 
+<div align="center">
+  
 ## Integrantes
-
-
+  
 <a href="https://github.com/alonso-boj" title="Alonso Batista de Oliveira Júnior" rel="nofollow"><img src="documentacao/alonso.png" alt="logo" data-canonical-src="https://github.com/alonso-boj" width="100vw"/></a>
 <a href="https://github.com/alonso-boj" title="Bogos Bedik Chaves Sismanoglu" rel="nofollow"><img src="docs/img/alonso.png" alt="logo" data-canonical-src="https://github.com/" width="100vw"/></a>
 <a href="https://github.com/gstvcastroc" title="Gustavo Castro Candeia" rel="nofollow"><img src="documentacao/gustavo.png" alt="logo" data-canonical-src="https://github.com/gstvcastroc" width="100vw"/></a>
@@ -22,7 +23,8 @@
 
 ## Professor
 
-* Eveline Alonso Veloso
+<a href="https://github.com/EvelineAlonso" title="Eveline Alonso Velos" rel="nofollow"><img src="docs/img/Welbert.png" alt="logo" data-canonical-src="https://github.com/EvelineAlonso" width="100vw"/></a>
+</div>
 
 
 ## Histórico de versões
