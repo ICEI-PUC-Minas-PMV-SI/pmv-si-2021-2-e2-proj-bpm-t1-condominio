@@ -153,4 +153,38 @@ Após o cotejamento entre os bancos de dados NoSQL e SQL, seus propósitos e apl
   
 ![Imagem](/codigo/images/outros/mer.png)
   
+**5. Relatórios analíticos**
+  
+Considerando as necessidades de informações das diversas partes interessadas nos processos eleitos, desenvolvam, com o apoio da ferramenta empregada na disciplina, relatórios úteis para o controle dos processos e a tomada de decisão.  
+Cada processo identificado deve possuir, no mínimo, um relatório analítico associado. Os relatórios devem utilizar os recursos de filtros, agregadores, agrupadores e ordenação disponibilizados pela ferramenta.  
+Cada relatório desenvolvido deve ter sua imagem apresentada aqui juntamente com a descrição de seus objetivos.  
+  
+  -  **5.1. Associação de comandos SQL com relatórios analíticos**
+  
+Após o desenvolvimento dos relatórios analíticos com o suporte da ferramenta empregada na disciplina, realizem um processo de engenharia reversa e codifiquem os comandos SQL-DML (selects) que produzem os relatórios automaticamente gerados. Preencham o formulário abaixo com esses comandos.
+
+**Nome do Relatório Analítico** | **Comando SQL-DML (SELECT)**
+------------ | -------------
+Relatório de Participantes por Evento | Halex
+Relatório de Eventos Cancelados | Rafael
+Relatório de Abstenções em Eventos | Alonso
+Relatório de Média Eventos por Ano | Bogos
+Relatório de Cancelamentos por Participantes em Eventos | Welbert
+Relatório de Utilização de Áreas de Lazer por Ano em Eventos | Gustavo
+  
+**6. Indicadores de desempenho**
+  
+Com uma visão mais estratégica, identifiquem, a partir dos relatórios analíticos, indicadores chave de processo (KPIs – Key Process Indicator) que permitam um acompanhamento integrado dos vários processos eleitos. 
+Detalhe,  na tabela abaixo, pelo menos cinco indicadores de desempenho identificados. Esses indicadores de desempenho devem ser descritos por meio de medidas estatísticas, conforme exemplo abaixo.
+  
+**Indicador** | **Objetivo** | **Descrição** | **Fórmula de Cálculo** | **Fontes de dados** | **Perspectiva**
+------------- | ------------ | ------------- | ---------------------- | ------------------- | -------------
+ xxxxxxxxxxxx | xxxxxxxxxxxx | xxxxxxxxxxxxx | xxxxxxxxxxxxxxxxxxxxxx | xxxxxxxxxxxxxxxxxxx | xxxxxxxxxxxxx
+ yyyyyyyyyyyy | yyyyyyyyyyyy | yyyyyyyyyyyyy | yyyyyyyyyyyyyyyyyyyyyy | yyyyyyyyyyyyyyyyyyy | yyyyyyyyyyyyy
+ zzzzzzzzzzzz | zzzzzzzzzzzz | zzzzzzzzzzzzz | zzzzzzzzzzzzzzzzzzzzzz | zzzzzzzzzzzzzzzzzzz | zzzzzzzzzzzzz
+  
+ **7. Conclusão**
+  
+Apresentem aqui a conclusão do trabalho que deve conter uma síntese dos principais resultados obtidos com a melhoria dos processos, uma discussão das limitações da solução proposta e sugestões de novas linhas de estudo.
+  
 </div>
