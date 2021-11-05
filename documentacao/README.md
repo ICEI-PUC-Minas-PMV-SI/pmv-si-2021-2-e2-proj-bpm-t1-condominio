@@ -165,7 +165,7 @@ Após o desenvolvimento dos relatórios analíticos com o suporte da ferramenta 
 
 **Nome do Relatório Analítico** | **Comando SQL-DML (SELECT)**
 ------------ | -------------
-Relatório de Participantes por Evento | Halex
+Relatório de Participantes por Evento | select m.nomemorador, e.nome, e.datarealizacao,	al.nome, me.confirmacao from tbmorador m, tbevento e, tbeventoarealazer eal, tbmoradoreseventos me, tbarealazer al where m.idmorador = me.idmorador and e.idevento = eal.idevento and e.idevento = me.idevento and eal.idarealazer = al.idarealazer
 Relatório de Eventos Cancelados | Rafael
 Relatório de Abstenções em Eventos | Alonso
 Relatório de Média Eventos por Ano | Bogos
@@ -177,14 +177,20 @@ Relatório de Utilização de Áreas de Lazer por Ano em Eventos | Gustavo
 Com uma visão mais estratégica, identifiquem, a partir dos relatórios analíticos, indicadores chave de processo (KPIs – Key Process Indicator) que permitam um acompanhamento integrado dos vários processos eleitos. 
 Detalhe,  na tabela abaixo, pelo menos cinco indicadores de desempenho identificados. Esses indicadores de desempenho devem ser descritos por meio de medidas estatísticas, conforme exemplo abaixo.
   
+</div>
+
 **Indicador** | **Objetivo** | **Descrição** | **Fórmula de Cálculo** | **Fontes de dados** | **Perspectiva**
 ------------- | ------------ | ------------- | ---------------------- | ------------------- | -------------
- xxxxxxxxxxxx | xxxxxxxxxxxx | xxxxxxxxxxxxx | xxxxxxxxxxxxxxxxxxxxxx | xxxxxxxxxxxxxxxxxxx | xxxxxxxxxxxxx
- yyyyyyyyyyyy | yyyyyyyyyyyy | yyyyyyyyyyyyy | yyyyyyyyyyyyyyyyyyyyyy | yyyyyyyyyyyyyyyyyyy | yyyyyyyyyyyyy
- zzzzzzzzzzzz | zzzzzzzzzzzz | zzzzzzzzzzzzz | zzzzzzzzzzzzzzzzzzzzzz | zzzzzzzzzzzzzzzzzzz | zzzzzzzzzzzzz
+ Média de Participantes por Evento | xxxxxxxxxxxx | xxxxxxxxxxxxx | (Qtde Participantes/TotalEventos)*100 | xxxxxxxxxxxxxxxxxxx | xxxxxxxxxxxxx
+ Média de Abstenção Por Evento | yyyyyyyyyyyy | yyyyyyyyyyyyy | (Qtde Abstenção/TotalEventos)*100 | yyyyyyyyyyyyyyyyyyy | yyyyyyyyyyyyy
+ Média de Cancelamentos Por Evento | zzzzzzzzzzzz | zzzzzzzzzzzzz | (Qtde Cancelamentos/TotalEventos)*100 | zzzzzzzzzzzzzzzzzzz | zzzzzzzzzzzzz
+ Média de eventos por ano | zzzzzzzzzzzz | zzzzzzzzzzzzz | (QtdeEventos/365) | zzzzzzzzzzzzzzzzzzz | zzzzzzzzzzzzz
+ Média de Eventos Cancelados | zzzzzzzzzzzz | zzzzzzzzzzzzz | (Qtde Eventos Cancelados/TotalEventos)*100 | zzzzzzzzzzzzzzzzzzz | zzzzzzzzzzzzz
+ 
+<div align="justify">
   
  **7. Conclusão**
   
 Apresentem aqui a conclusão do trabalho que deve conter uma síntese dos principais resultados obtidos com a melhoria dos processos, uma discussão das limitações da solução proposta e sugestões de novas linhas de estudo.
-  
+
 </div>
