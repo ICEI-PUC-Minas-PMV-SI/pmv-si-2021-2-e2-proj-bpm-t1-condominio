@@ -169,7 +169,7 @@ Relatório de eventos cancelados | Rafael
 Relatório eventos em áreas de lazer | SELECT evento.Nome 'Nome do evento', areaLazer.Nome 'Área do evento', FROM tbEvento Evento LEFT JOIN tbEventoAreaLazer EventoAreaLazer ON eventoAreaLazer.IDEvento = evento.IDEvento LEFT JOIN tbAreaLazer AreaLazer ON areaLazer.IDAreaLazer = eventoAreaLazer.IDAreaLazer ORDER BY areaLazer.Nome
 Relatório de média de eventos por ano | Bogos
 Relatório de cancelamentos por participantes em eventos | Welbert
-Relatório de utilização de areas de lazer por ano em eventos | Gustavo
+Relatório de utilização de areas de lazer por ano em eventos | select evento.Nome NomeEvento, areaLazer.Nome 'Local do Evento', convert(varchar, eventoArea.DataRealizacao, 1103) DataRealizacao, count(eventoArea.IDEvento) Quantidade from tbEvento evento left join tbEventoAreaLazer eventoArea on eventoArea.IDEvento = evento.IDEvento left join tbAreaLazer areaLazer on areaLazer.IDAreaLazer = eventoArea.IDAreaLazer group by evento.Nome, areaLazer.Nome, eventoArea.DataRealizacao
   
 **6. Indicadores de desempenho**
 </div>
