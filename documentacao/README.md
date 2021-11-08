@@ -184,7 +184,7 @@ Através de uma tabela, esse relatório lista diversas informações sobre parti
 **Nome do Relatório Analítico** | **Comando SQL-DML (SELECT)**
 ------------ | -------------
 Relatório de participantes por evento | select m.nomemorador, e.nome, e.datarealizacao,	al.nome, me.confirmacao from tbmorador m, tbevento e, tbeventoarealazer eal, tbmoradoreseventos me, tbarealazer al where m.idmorador = me.idmorador and e.idevento = eal.idevento and e.idevento = me.idevento and eal.idarealazer = al.idarealazer
-Relatório de eventos cancelados | Rafael
+Relatório de eventos por tipo de eventos | Rafael
 Relatório eventos em áreas de lazer | SELECT evento.Nome 'Nome do evento', areaLazer.Nome 'Área do evento', FROM tbEvento Evento LEFT JOIN tbEventoAreaLazer EventoAreaLazer ON eventoAreaLazer.IDEvento = evento.IDEvento LEFT JOIN tbAreaLazer AreaLazer ON areaLazer.IDAreaLazer = eventoAreaLazer.IDAreaLazer ORDER BY areaLazer.Nome
 Relatório de média de eventos por ano | Bogos
 Relatório de cancelamentos por participantes em eventos | Welbert
