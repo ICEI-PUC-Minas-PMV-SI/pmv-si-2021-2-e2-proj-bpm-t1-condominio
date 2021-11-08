@@ -204,6 +204,8 @@ Relatório de utilização de areas de lazer por ano em eventos | select evento.
   
  **7. Conclusão**
   
-Apresentem aqui a conclusão do trabalho que deve conter uma síntese dos principais resultados obtidos com a melhoria dos processos, uma discussão das limitações da solução proposta e sugestões de novas linhas de estudo.
+O objetivo deste trabalho foi a centralização administrativa de um condomínio em uma plataforma que simplifica e dá fluidez a todo o processo gerencial de um condomínio. Sempre foi o nosso foco ao longo do projeto a obtenção de uma ferramenta que seja de fácil usabilidade, não apenas para a figura do síndico que é o maior beneficiado mas também para os condôminos, facilitando assim a convivência e gerenciamento dentro de um condomínio.
+Conseguimos cumprir com todos os objetivos propostos pela ementa da disciplina, porém, reduzimos o escopo original de nossa proposta em virtude do tempo que tínhamos para concluir o trabalho.  
+Assim sendo, estamos entregando uma plataforma pronta para ser implementada com as funcionalidades que automatizamos em pleno funcionamento e devidamente testadas. Havendo interesse em continuar o desenvolvimento dessa proposta e para que se obtenha uma plataforma de gerenciamento mais completa, recomendamos a automatização dos demais processos que citamos, pois conforme já citado em virtude do tempo de entrega automatizamos apenas o processos de Cadastrar Reservas De Espaço Das Áreas De Lazer e o processo de Confirmação Dos Moradores Que Participarão De Eventos.
 
 </div>
