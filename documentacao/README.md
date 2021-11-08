@@ -99,7 +99,8 @@ Por isso, este trabalho visa o desenvolvimento de um sistema de gerenciamento co
 
     O condômino que tiver uma ideia de projeto ou sugestão de melhoria para fazer, acessará a plataforma e identificará a opção de cadastrar uma sugestão de melhoria para o condomínio. Uma nova página com alguns campos está disposta. Essa página contém os  campos: título do projeto/sugestão, descrição do projeto/melhoria e data de publicação. Após o preenchimento dos campos, todos os moradores do condomínio receberão a sugestão. Mediante a aprovação da maioria utilizando um sistema de votação por enquete, é possível colocar em prática a ideia proposta. Assim sendo, é possível através da plataforma trazer celeridade ao processo de cadastro e execução das melhorias propostas, pois através da utilização da plataforma para cadastrar, notificar e votar as melhorias, inexiste a necessidade de se fazer uma assembleia condominial para tal.
 
-    ![Imagem](/documentacao/images/TOBE/melhorias.png)  
+  ![TOBE](https://user-images.githubusercontent.com/81397022/140833698-ed68e70a-7845-45a6-87d2-d3c935c7715a.png)
+
   
   - **Sistematizar enquetes de votação de novos projetos e melhorias no condomínio**
 
