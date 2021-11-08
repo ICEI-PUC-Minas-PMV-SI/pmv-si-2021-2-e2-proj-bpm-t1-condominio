@@ -197,7 +197,7 @@ Relatório de utilização de areas de lazer por ano em eventos | select evento.
 ------------- | ------------ | ------------- | ---------------------- | ------------------- | -------------
  Média de Participantes por Evento | xxxxxxxxxxxx | xxxxxxxxxxxxx | (Qtde Participantes/TotalEventos)*100 | xxxxxxxxxxxxxxxxxxx | xxxxxxxxxxxxx
  Porcentagem de eventos por área de lazer | Constatar quais áreas de lazer são mais utilizadas em eventos a fim de auxiliar o síndico a organizar-se melhor. | Apresentar a porcentagem de ocupação das áreas de lazer reservadas para eventos. | (Eventos em uma área de lazer/Total de eventos)*100 | Tabelas de eventos e áreas de lazer. | Visualizar um gráfico de pizza relativo aos eventos por área de lazer. 
- Quantidade de eventos por tipo de eventos | zzzzzzzzzzzz | zzzzzzzzzzzzz | zzzzzzzzzzz | zzzzzzzzzzzzzzzzzzz | zzzzzzzzzzzzz
+ Porcentagem de eventos por tipo de evento | zzzzzzzzzzzz | zzzzzzzzzzzzz | zzzzzzzzzzz | zzzzzzzzzzzzzzzzzzz | zzzzzzzzzzzzz
  Média de eventos por ano | Constatar a média de incidência de eventos no período de um ano | Apresentar a média de ocorrência de eventos | (QtdeEventos/365) | Tabela de eventos | Visualizar o histograma de eventos.
  Média de Eventos Cancelados | zzzzzzzzzzzz | zzzzzzzzzzzzz | (Qtde Eventos Cancelados/TotalEventos)*100 | zzzzzzzzzzzzzzzzzzz | zzzzzzzzzzzzz
  
