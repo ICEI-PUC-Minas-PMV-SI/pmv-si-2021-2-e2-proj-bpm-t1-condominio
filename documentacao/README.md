@@ -187,7 +187,7 @@ Relatório de participantes por evento | select m.nomemorador, e.nome, e.datarea
 Relatório de eventos por tipo de eventos | Rafael
 Relatório eventos em áreas de lazer | SELECT evento.Nome 'Nome do evento', areaLazer.Nome 'Área do evento', FROM tbEvento Evento LEFT JOIN tbEventoAreaLazer EventoAreaLazer ON eventoAreaLazer.IDEvento = evento.IDEvento LEFT JOIN tbAreaLazer AreaLazer ON areaLazer.IDAreaLazer = eventoAreaLazer.IDAreaLazer ORDER BY areaLazer.Nome
 Relatório de média de eventos por ano | SELECT YEAR(DataRealizacao) AS Ano, COUNT(IDEvento) AS QTD_Eventos FROM tbEvento GROUP BY YEAR(DataRealizacao)
-Relatório de cancelamentos por participantes em eventos | Welbert
+Relatório da quantidade de participantes por tipo de evento | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 Relatório de utilização de areas de lazer por ano em eventos | select evento.Nome NomeEvento, areaLazer.Nome 'Local do Evento', convert(varchar, eventoArea.DataRealizacao, 103) DataRealizacao, count(eventoArea.IDEvento) Quantidade from tbEvento evento left join tbEventoAreaLazer eventoArea on eventoArea.IDEvento = evento.IDEvento left join tbAreaLazer areaLazer on areaLazer.IDAreaLazer = eventoArea.IDAreaLazer group by evento.Nome, areaLazer.Nome, eventoArea.DataRealizacao
   
 **6. Indicadores de desempenho**
@@ -199,7 +199,7 @@ Relatório de utilização de areas de lazer por ano em eventos | select evento.
  Porcentagem de eventos por área de lazer | Constatar quais áreas de lazer são mais utilizadas em eventos a fim de auxiliar o síndico a organizar-se melhor. | Apresentar a porcentagem de ocupação das áreas de lazer reservadas para eventos. | (Eventos em uma área de lazer/Total de eventos)*100 | Tabelas de eventos e áreas de lazer. | Visualizar um gráfico de pizza relativo aos eventos por área de lazer. 
  Quantidade de eventos por tipo de eventos | zzzzzzzzzzzz | zzzzzzzzzzzzz | zzzzzzzzzzz | zzzzzzzzzzzzzzzzzzz | zzzzzzzzzzzzz
  Média de eventos por ano | Constatar a média de incidência de eventos no período de um ano | Apresentar a média de ocorrência de eventos | (QtdeEventos/365) | Tabela de eventos | Visualizar o histograma de eventos.
- Média de Eventos Cancelados | zzzzzzzzzzzz | zzzzzzzzzzzzz | (Qtde Eventos Cancelados/TotalEventos)*100 | zzzzzzzzzzzzzzzzzzz | zzzzzzzzzzzzz
+ Quantidade de participantes por tipo de eventos | Constatar a quantidade de participantes por tipo de evento | Apresentar a quantidade de moradores por tipo de evento.  | (Qtde ParticipantesTipoEvento/TipoDeEvento) | Tabela de Morador Evento e de eventos  | Visualizar um gráfico de barras relativo a quantidade de moradores em cada tipo de evento.
  
 <div align="justify">
   
