@@ -178,7 +178,11 @@ Esse relatório destaca a quantidade de eventos realizados em um intervalo de um
 ![Imagem](/documentacao/images/relatorios/participantesPorEvento.png)
 
 Através de uma tabela, esse relatório lista diversas informações sobre participações em determinados eventos. A coluna "Nome do evento" pode ser utilizada para filtrar as participações por evento.
-  
+
+![Imagem](/documentacao/images/relatorios/quantidadePorTipoEvento.png)  
+
+Relatório que destaca através de um gráfico de barras a quantidade de participantes por tipo de evento. 
+ 
   -  **5.1. Associação de comandos SQL com relatórios analíticos**
 
 **Nome do Relatório Analítico** | **Comando SQL-DML (SELECT)**
