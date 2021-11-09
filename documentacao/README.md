@@ -60,6 +60,7 @@ Por isso, este trabalho visa o desenvolvimento de um sistema de gerenciamento co
   - **Cadastro de projetos e sugestões de melhorias no condomínio**
   
     O cadastro de projetos e sugestão de melhorias no condomínio é feito presencialmente através de assembleias, conforme ciência e aprovação de todos os moradores. Mediante aprovação, o síndico coordena a execução dos projetos/melhorias.
+    
     ![Imagem](/documentacao/images/ASIS/enquetes.png) 
   
   - **Sistematizar enquetes de votação de novos projetos e melhorias no condomínio**
