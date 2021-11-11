@@ -191,7 +191,7 @@ Relatório de participantes por evento | select m.nomemorador, e.nome, e.datarea
 Relatório de eventos por tipo de eventos | SELECT Nome 'Nome do evento', Tipo_evento 'Tipo de Evento' FROM tbEvento ORDER BY Tipo_evento
 Relatório eventos em áreas de lazer | SELECT evento.Nome 'Nome do evento', areaLazer.Nome 'Área do evento' FROM tbEvento Evento LEFT JOIN tbEventoAreaLazer EventoAreaLazer ON eventoAreaLazer.IDEvento = evento.IDEvento LEFT JOIN tbAreaLazer AreaLazer ON areaLazer.IDAreaLazer = eventoAreaLazer.IDAreaLazer ORDER BY areaLazer.Nome
 Relatório de média de eventos por ano | SELECT YEAR(DataRealizacao) AS Ano, COUNT(IDEvento) AS QTD_Eventos FROM tbEvento GROUP BY YEAR(DataRealizacao)
-Relatório da quantidade de participantes por tipo de evento | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Relatório da quantidade de participantes por tipo de evento | SELECT a.nomemorador AS "Nome do Morador" , TipoDoEvento, COUNT(1) "Participação" from TBMorador a JOIN TBMoradoresEventos b ON a.IDMorador = b.IDMorador JOIN TBEvento c on c.IDEvento = b.IDEvento GROUP by NomeMorador, TipoDoEvento ORDER BY a.NomeMorador
 Relatório de utilização de areas de lazer por ano em eventos | select evento.Nome NomeEvento, areaLazer.Nome 'Local do Evento', convert(varchar, eventoArea.DataRealizacao, 103) DataRealizacao, count(eventoArea.IDEvento) Quantidade from tbEvento evento left join tbEventoAreaLazer eventoArea on eventoArea.IDEvento = evento.IDEvento left join tbAreaLazer areaLazer on areaLazer.IDAreaLazer = eventoArea.IDAreaLazer group by evento.Nome, areaLazer.Nome, eventoArea.DataRealizacao
   
 **6. Indicadores de desempenho**
