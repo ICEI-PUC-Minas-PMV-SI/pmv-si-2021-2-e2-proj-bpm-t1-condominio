@@ -188,7 +188,8 @@ Relatório que destaca através de um gráfico de barras a quantidade de partici
 **Nome do Relatório Analítico** | **Comando SQL-DML (SELECT)**
 ------------ | -------------
 Relatório de participantes por evento | select m.nomemorador, e.nome, e.datarealizacao,	al.nome, me.confirmacao from tbmorador m, tbevento e, tbeventoarealazer eal, tbmoradoreseventos me, tbarealazer al where m.idmorador = me.idmorador and e.idevento = eal.idevento and e.idevento = me.idevento and eal.idarealazer = al.idarealazer
-Relatório de eventos por tipo de eventos | Rafael
+Relatório de eventos por tipo de eventos | SELECT Nome 'Nome do evento', Tipo_evento 'Tipo de Evento', 
+FROM tbEvento ORDER BY Tipo_evento
 Relatório eventos em áreas de lazer | SELECT evento.Nome 'Nome do evento', areaLazer.Nome 'Área do evento', FROM tbEvento Evento LEFT JOIN tbEventoAreaLazer EventoAreaLazer ON eventoAreaLazer.IDEvento = evento.IDEvento LEFT JOIN tbAreaLazer AreaLazer ON areaLazer.IDAreaLazer = eventoAreaLazer.IDAreaLazer ORDER BY areaLazer.Nome
 Relatório de média de eventos por ano | SELECT YEAR(DataRealizacao) AS Ano, COUNT(IDEvento) AS QTD_Eventos FROM tbEvento GROUP BY YEAR(DataRealizacao)
 Relatório da quantidade de participantes por tipo de evento | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
