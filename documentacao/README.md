@@ -26,11 +26,12 @@ Por isso, este trabalho visa o desenvolvimento de um sistema de gerenciamento co
     - Emitir e notificar avisos cadastrados aos moradores;
     - Sistematizar enquetes de votação de novos projetos e melhorias no condomínio;
     - Gerenciar calendário de eventos e confirmação dos moradores que participarão;
-    - Cadastrar e gerenciar reservas de espaço das áreas de lazer.
+    - Cadastrar e gerenciar reservas de espaço das áreas de lazer;
+    - Automatizar os processos de gerenciamento de calendário de eventos e confirmação dos moradores que participarão de eventos.
 
 - **1.2. Justificativas**
   
-  - A administração de um condomínio é uma tarefa muito difícil. Um condomínio demanda a organização de assembleias, reserva do salão de festas, cadastros de moradores, além de manter os moradores informados. Geralmente todas essas funções ficam centralizadas no síndico, dificultando a administração do condomínio, gerando conflito e, em alguns casos, até processos judiciais oriundos de uma má administração. Assim sendo, vimos a necessidade de elaborar um sistema de gerenciamento condominial que auxilie o condomínio em sua comunicação interna. A adoção de uma plataforma que centraliza os processos de gerenciamento acarreta uma série de benefícios, como: facilidade na comunicação entre o síndico e os condôminos, diminuição de conflitos nos condomínios, o fortalecimento do elo entre os síndicos e os condôminos, facilidade na reserva de espaços de lazer, além de maior celeridade em todo o processo.
+  - A administração de um condomínio é uma tarefa muito difícil. A administração de um condomínio demanda cadastro de moradores, organização de assembleias, reserva de áreas de lazer, além de manter os moradores informados. Geralmente todas essas funções ficam centralizadas no síndico, dificultando a administração do condomínio, gerando conflito e, em alguns casos, até processos judiciais oriundos de uma má administração. Assim sendo, vimos a necessidade de elaborar um sistema de gerenciamento condominial que auxilie o condomínio em sua comunicação interna. A adoção de uma plataforma que centraliza os processos de gerenciamento acarreta uma série de benefícios como: facilidade na comunicação entre o síndico e os condôminos, diminuição de conflitos nos condomínios, o fortalecimento do elo entre os síndicos e os condôminos, facilidade na reserva de espaços de lazer, além de maior celeridade em todo o processo.
   
  **2.Participantes do processo de negócio**
   
@@ -86,19 +87,19 @@ Por isso, este trabalho visa o desenvolvimento de um sistema de gerenciamento co
 
   - **Cadastro de novos moradores**
 
-    O síndico solicita dados básicos como o e-mail do novo morador para que possa ser criado o login inicial no sistema do condomínio. Ao receber o acesso ao sistema, o novo morador deve preencher a ficha completa que contém os seguintes campos: nome completo, sexo e os dados do endereço desse morador, como: logadouro, cep, bairro, número e complemento. Após cadastrar os dados, o sistema valida automaticamente os dados em buscas de inconsistências. Caso houver alguma inconsistência no cadastro, o morador será alertado para inserir novamente os dados. Uma vez que o cadastro esteja validado pelo sistema, o processo do cadastro é concluído com os dados finais salvos no banco de dados.
+   O novo morador deve preencher uma ficha completa que contém os seguintes campos: nome completo, sexo, dados de endereço como: logadouro, CEP, bairro, número e complemento. Após cadastrar os dados, o sistema valida automaticamente os dados em buscas de inconsistências. Caso houver alguma inconsistência no cadastro, o morador será alertado para inserir novamente os dados. Uma vez que o cadastro esteja validado pelo sistema, o processo do cadastro é concluído com os dados finais salvos no banco de dados.
  
     ![Imagem](/documentacao/images/TOBE/moradores.png)  
   
   - **Cadastrar, emitir e notificar avisos idealizados pelo síndico**
 
-    O síndico acessa a plataforma e seleciona a opção de cadastro de avisos. Uma nova página com alguns campos está disposta. Esses campos são: título do aviso, corpo do aviso e data de publicação. Dessa forma, seria possível centralizar em uma única plataforma uma solução para o cadastro de todo tipo de aviso idealizado pelo síndico, dispensando, assim, a utilização de ferramentas externas.
+    O síndico acessa a plataforma e seleciona a opção de cadastro de avisos. Uma nova página com alguns campos será disposta. Esses campos são: título do aviso, corpo do aviso e data de publicação. Dessa forma, seria possível centralizar em uma única plataforma uma solução para o cadastro de todo tipo de aviso idealizado pelo síndico, dispensando, assim, a utilização de ferramentas externas.
 
     ![Imagem](/documentacao/images/TOBE/avisos.png)  
   
   - **Cadastro de projetos e sugestões de melhorias no condomínio**
 
-    O condômino que tiver uma ideia de projeto ou sugestão de melhoria para fazer, acessará a plataforma e identificará a opção de cadastrar uma sugestão de melhoria para o condomínio. Uma nova página com alguns campos está disposta. Essa página contém os  campos: título do projeto/sugestão, descrição do projeto/melhoria e data de publicação. Após o preenchimento dos campos, todos os moradores do condomínio receberão a sugestão. Mediante a aprovação da maioria utilizando um sistema de votação por enquete, é possível colocar em prática a ideia proposta. Assim sendo, é possível através da plataforma trazer celeridade ao processo de cadastro e execução das melhorias propostas, pois através da utilização da plataforma para cadastrar, notificar e votar as melhorias, inexiste a necessidade de se fazer uma assembleia condominial para tal.
+    O condômino que tiver uma ideia de projeto ou sugestão de melhoria para fazer, acessará a plataforma e identificará a opção de cadastrar uma sugestão de melhoria para o condomínio. Uma nova página com alguns campos será disposta. Essa página contém os campos: título do projeto/sugestão, descrição do projeto/melhoria e data de publicação. Após o preenchimento dos campos, todos os moradores do condomínio receberão a sugestão. Mediante a aprovação da maioria utilizando um sistema de votação por enquete, é possível colocar em prática a ideia proposta. Assim sendo, é possível através da plataforma trazer celeridade ao processo de cadastro e execução das melhorias propostas, pois através da utilização da plataforma para cadastrar, notificar e votar as melhorias, inexiste a necessidade de se fazer uma assembleia condominial para tal.
 
     ![Imagem](/documentacao/images/TOBE/TOBE.png)
   
@@ -112,13 +113,13 @@ Por isso, este trabalho visa o desenvolvimento de um sistema de gerenciamento co
 
     ![Imagem](/documentacao/images/TOBE/enquetes.png)  
 
-  - **Gerenciar calendário de eventos**
+  - **Gerenciar calendário de eventos - PROCESSO AUTOMATIZADO**
 
     Para o síndico será disponibilizado a ferramenta de cadastro de eventos e gerência dos mesmos. O síndico terá acesso a opções como: consultar, cadastrar, alterar e excluir eventos.
   
     ![Imagem](/documentacao/images/TOBE/eventos.png)
 
-  - **Confirmação dos moradores que participarão de eventos**
+  - **Confirmação dos moradores que participarão de eventos - PROCESSO AUTOMATIZADO**
 
     Por meio da plataforma, os condôminos podem confirmar as suas presenças nos eventos cadastrados pelo síndico. O síndico terá controle sobre a quantia de inscrições em cada um dos eventos criados por ele para que, assim, o síndico possa ter a informação sobre a quantia exata de participantes e o quanto de recursos ele precisará comprar/ter para realizar o evento.
     
@@ -199,18 +200,18 @@ Relatório de utilização de areas de lazer por ano em eventos | select evento.
 
 **Indicador** | **Objetivo** | **Descrição** | **Fórmula de Cálculo** | **Fontes de dados** | **Perspectiva**
 ------------- | ------------ | ------------- | ---------------------- | ------------------- | -------------
- Média de Participantes por Evento | Constatar a média de participantes por Evento | Apresentar a porcentagem de participação de moradores por evento. | (Qtde Participantes/TotalEventos)*100 | Tabela de moradores/eventos | Visualizar o histograma de média de participação de moradores por eventos.
+ Média de Participantes por Evento | Constatar a média de participantes por Evento | Apresentar a porcentagem de participação de moradores por evento. | (Quantidade de participantes/Total de Eventos)*100 | Tabela de moradores/eventos | Visualizar o histograma de média de participação de moradores por eventos.
  Porcentagem de eventos por área de lazer | Constatar quais áreas de lazer são mais utilizadas em eventos a fim de auxiliar o síndico a organizar-se melhor. | Apresentar a porcentagem de ocupação das áreas de lazer reservadas para eventos. | (Eventos em uma área de lazer/Total de eventos)*100 | Tabelas de eventos e áreas de lazer. | Visualizar um gráfico de pizza relativo aos eventos por área de lazer. 
- Quantidade de eventos por tipo de eventos | zzzzzzzzzzzz | zzzzzzzzzzzzz | zzzzzzzzzzz | zzzzzzzzzzzzzzzzzzz | zzzzzzzzzzzzz
- Média de eventos por ano | Constatar a média de incidência de eventos no período de um ano | Apresentar a média de ocorrência de eventos | (QtdeEventos/365) | Tabela de eventos | Visualizar o histograma de eventos.
- Quantidade de participantes por tipo de eventos | Constatar a quantidade de participantes por tipo de evento | Apresentar a quantidade de moradores por tipo de evento.  | (Qtde ParticipantesTipoEvento/TipoDeEvento) | Tabela de Morador Evento e de eventos  | Visualizar um gráfico de barras relativo a quantidade de moradores em cada tipo de evento.
+ Quantidade de eventos por tipo de eventos | Constatar qual é o tipo de evento mais recorrente | Apresentar a porcentagem de quais tipos de eventos ocorrem com mais frequência | (Tipo de evento)/(Quantidade total de eventos) * 100 | Tabela de eventos | Visualizar o histograma da quantidade de eventos por tipo de eventos
+ Média de eventos por ano | Constatar a média de incidência de eventos no período de um ano | Apresentar a média de ocorrência de eventos | (Quantidade de eventos/365) | Tabela de eventos | Visualizar o histograma de eventos.
+ Quantidade de participantes por tipo de eventos | Constatar a quantidade de participantes por tipo de evento | Apresentar a quantidade de moradores por tipo de evento.  | (Quantidade de participantes por tipo de evento/Tipo de evento) | Tabelas de moradores/eventos e de eventos  | Visualizar um gráfico de barras relativo a quantidade de moradores em cada tipo de evento.
  
 <div align="justify">
   
  **7. Conclusão**
   
-O objetivo deste trabalho foi a centralização administrativa de um condomínio em uma plataforma que simplifica e dá fluidez a todo o processo gerencial de um condomínio. Sempre foi o nosso foco ao longo do projeto a obtenção de uma ferramenta que seja de fácil usabilidade, não apenas para a figura do síndico que é o maior beneficiado mas também para os condôminos, facilitando assim a convivência e gerenciamento dentro de um condomínio.
-Conseguimos cumprir com todos os objetivos propostos pela ementa da disciplina, porém, reduzimos o escopo original de nossa proposta em virtude do tempo que tínhamos para concluir o trabalho.  
-Assim sendo, estamos entregando uma plataforma pronta para ser implementada com as funcionalidades que automatizamos em pleno funcionamento e devidamente testadas. Havendo interesse em continuar o desenvolvimento dessa proposta e para que se obtenha uma plataforma de gerenciamento mais completa, recomendamos a automatização dos demais processos que citamos, pois conforme já citado em virtude do tempo de entrega automatizamos apenas o processos de Cadastrar Reservas De Espaço Das Áreas De Lazer e o processo de Confirmação Dos Moradores Que Participarão De Eventos.
+O objetivo deste trabalho foi a centralização administrativa de um condomínio em uma plataforma que simplifica e dá fluidez a todo o processo gerencial de um condomínio. O foco ao longo do projeto era a obtenção de uma ferramenta que seja de fácil usabilidade, não apenas para a figura do síndico que é o maior beneficiado, mas também para os condôminos, facilitando assim a convivência e gerenciamento dentro de um condomínio.
 
-</div>
+Conseguiu-se cumprir com todos os objetivos propostos pela ementa da disciplina, porém, houve necessidade de diminuir-se o escopo original da proposta em virtude do tempo que disponível para concluir o trabalho e automatizou-se apenas os processos de gerenciamento de calendário de eventos e confirmação de participantes.
+
+Assim sendo, entregou-se uma plataforma pronta para ser implementada com as duas funcionalidades automatizadas em pleno funcionamento e devidamente testadas. Se houver interesse em continuar o desenvolvimento dessa proposta e para que se obtenha uma plataforma de gerenciamento mais completa, recomenda-se a automatização dos demais processos.</div>

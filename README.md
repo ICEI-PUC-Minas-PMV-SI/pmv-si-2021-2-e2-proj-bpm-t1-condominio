@@ -30,5 +30,5 @@
 ## Histórico de versões
 
   - **1.0.0**
-> **Documentação Inicial (Github) | 03/11/2021**
+> **Documentação inicial (GitHub) | 03/11/2021**
 
