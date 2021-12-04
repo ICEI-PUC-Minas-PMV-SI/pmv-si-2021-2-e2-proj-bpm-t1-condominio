@@ -50,37 +50,37 @@ Por isso, este trabalho visa o desenvolvimento de um sistema de gerenciamento co
   
     A fim de realizar o cadastro de novos moradores, é necessário que o síndico entre em contato com os novos condôminos e solicite todos os dados necessários. Em seguida, o síndico computa esses dados em algum sistema de armazenamento para os dados - planilhas, cadernos e afins.
 
-    ![Imagem](/documentacao/images/ASIS/cadastroMoradores.png)  
+    ![Imagem](/artefatos/processos/ASIS/cadastroMoradores.png)  
   
   - **Cadastrar, emitir e notificar avisos idealizados pelo síndico**
 
     O síndico redige avisos aos condôminos através de ferramentas externas - suíte office, por exemplo. Após criar os avisos, o síndico imprime os documentos e os coloca em áreas comuns do condomínio como portarias e elevadores, por exemplo. É comum, também, que o síndico envie uma cópia digital do documento via aplicativos de comunicação como o WhatsApp, Telegram etc.
 
-    ![Imagem](/documentacao/images/ASIS/avisos.png)  
+    ![Imagem](/artefatos/processos/ASIS/avisos.png)  
   
   - **Cadastro de projetos e sugestões de melhorias no condomínio**
   
     O cadastro de projetos e sugestão de melhorias no condomínio é feito presencialmente através de assembleias, conforme ciência e aprovação de todos os moradores. Mediante aprovação, o síndico coordena a execução dos projetos/melhorias.
     
-    ![Imagem](/documentacao/images/ASIS/enquetes.png) 
+    ![Imagem](/artefatos/processos/ASIS/enquetes.png) 
   
   - **Sistematizar enquetes de votação de novos projetos e melhorias no condomínio**
 
     Enquetes de votação de novos projetos, melhorias e outras modificações diversas no condomínio são realizadas presencialmente em assembleias entre síndicos e proprietários das unidades.
 
-    ![Imagem](/documentacao/images/ASIS/projetosMelhorias.png)  
+    ![Imagem](/artefatos/processos/ASIS/projetosMelhorias.png)  
   
   - **Gerenciar calendário de eventos e confirmação dos moradores que participarão**
 
     O calendário de eventos, além do controle da quantidade de indivíduos que participará do evento, é gerenciada de forma manual: o síndico precisa verificar em planilhas ou outros sistemas as datas para as quais eventos foram marcados, além de entrar em contato com os condôminos que participarão desses eventos para confirmar as suas presenças.
 
-    ![Imagem](/documentacao/images/ASIS/confirmaPresenca.png)  
+    ![Imagem](/artefatos/processos/ASIS/confirmaPresenca.png)  
   
   - **Cadastrar e gerenciar reservas de espaço das áreas de lazer**
 
     Os condôminos precisam entrar em contato com o síndico e solicitar reserva de espaço das áreas de lazer. O síndico, então, verifica se já existe alguma reserva para a data solicitada. Caso não haja algum problema, o síndico irá efetuar a reserva do local e avisar ao morador que solicitou a reserva.
 
-    ![Imagem](/documentacao/images/ASIS/areasLazer.png)  
+    ![Imagem](/artefatos/processos/ASIS/areasLazer.png)  
 
 
 - **3.2.  Modelagem dos processos aprimorados (TO-BE)**
@@ -89,19 +89,19 @@ Por isso, este trabalho visa o desenvolvimento de um sistema de gerenciamento co
 
    O novo morador deve preencher uma ficha completa que contém os seguintes campos: nome completo, sexo, dados de endereço como: logadouro, CEP, bairro, número e complemento. Após cadastrar os dados, o sistema valida automaticamente os dados em buscas de inconsistências. Caso houver alguma inconsistência no cadastro, o morador será alertado para inserir novamente os dados. Uma vez que o cadastro esteja validado pelo sistema, o processo do cadastro é concluído com os dados finais salvos no banco de dados.
  
-    ![Imagem](/documentacao/images/TOBE/moradores.png)  
+    ![Imagem](/artefatos/processos/TOBE/moradores.png)  
   
   - **Cadastrar, emitir e notificar avisos idealizados pelo síndico**
 
     O síndico acessa a plataforma e seleciona a opção de cadastro de avisos. Uma nova página com alguns campos será disposta. Esses campos são: título do aviso, corpo do aviso e data de publicação. Dessa forma, seria possível centralizar em uma única plataforma uma solução para o cadastro de todo tipo de aviso idealizado pelo síndico, dispensando, assim, a utilização de ferramentas externas.
 
-    ![Imagem](/documentacao/images/TOBE/avisos.png)  
+    ![Imagem](/artefatos/processos/TOBE/avisos.png)  
   
   - **Cadastro de projetos e sugestões de melhorias no condomínio**
 
     O condômino que tiver uma ideia de projeto ou sugestão de melhoria para fazer, acessará a plataforma e identificará a opção de cadastrar uma sugestão de melhoria para o condomínio. Uma nova página com alguns campos será disposta. Essa página contém os campos: título do projeto/sugestão, descrição do projeto/melhoria e data de publicação. Após o preenchimento dos campos, todos os moradores do condomínio receberão a sugestão. Mediante a aprovação da maioria utilizando um sistema de votação por enquete, é possível colocar em prática a ideia proposta. Assim sendo, é possível através da plataforma trazer celeridade ao processo de cadastro e execução das melhorias propostas, pois através da utilização da plataforma para cadastrar, notificar e votar as melhorias, inexiste a necessidade de se fazer uma assembleia condominial para tal.
 
-    ![Imagem](/documentacao/images/TOBE/TOBE.png)
+    ![Imagem](/artefatos/processos/TOBE/TOBE.png)
   
   - **Sistematizar enquetes de votação de novos projetos e melhorias no condomínio**
 
@@ -111,31 +111,31 @@ Por isso, este trabalho visa o desenvolvimento de um sistema de gerenciamento co
 
     Esse processo facilitará a realização das assembleias e também irá aumentar a participação dos condôminos, que na maioria das vezes não participam das reuniões presenciais. 
 
-    ![Imagem](/documentacao/images/TOBE/enquetes.png)  
+    ![Imagem](/artefatos/processos/TOBE/enquetes.png)  
 
   - **Gerenciar calendário de eventos - PROCESSO AUTOMATIZADO**
 
     Para o síndico será disponibilizado a ferramenta de cadastro de eventos e gerência dos mesmos. O síndico terá acesso a opções como: consultar, cadastrar, alterar e excluir eventos.
   
-    ![Imagem](/documentacao/images/TOBE/eventos.png)
+    ![Imagem](/artefatos/processos/TOBE/eventos.png)
 
   - **Confirmação dos moradores que participarão de eventos - PROCESSO AUTOMATIZADO**
 
     Por meio da plataforma, os condôminos podem confirmar as suas presenças nos eventos cadastrados pelo síndico. O síndico terá controle sobre a quantia de inscrições em cada um dos eventos criados por ele para que, assim, o síndico possa ter a informação sobre a quantia exata de participantes e o quanto de recursos ele precisará comprar/ter para realizar o evento.
     
-    ![Imagem](/documentacao/images/TOBE/confirmaMoradores.png)
+    ![Imagem](/artefatos/processos/TOBE/confirmaMoradores.png)
 
   - **Cadastrar e gerenciar reservas de espaço das áreas de lazer**
 
     O condômino acessa a plataforma e uma tela de login e senha é disponibilizada. Após realizar a autenticação, o usuário será direcionado para a tela principal na qual são disponibilizadas diversas opções, entre elas a de cadastrar reservas de espaço das áreas de lazer. O condômino, então, terá uma tela com a lista de espaços disponíveis. Após selecionar o espaço desejado, a plataforma mostrará um calendário com dias e horários disponíveis para agendamento. Ao clicar no dia e horário, o condômino será direcionado para uma página com alguns campos pré-preenchidos, como horário, dia, área de lazer selecionada, nome do condômino, unidade habitacional e um check-list de regras e obrigações a serem cumpridas, além de um checkbox com o aceite dos termos de reserva, além de um botão para confirmar a reserva. Ao confirmar a reserva, a plataforma redireciona o condômino para uma tela de confirmação com todos os dados da reserva com a opção de impressão, disparando também um e-mail com os dados da reserva para o síndico e condômino.
   
-    ![Imagem](/documentacao/images/TOBE/areaLazer.png)
+    ![Imagem](/artefatos/processos/TOBE/areaLazer.png)
   
 **4. Projeto da arquitetura de dados da solução proposta**
 
   - **4.1. Diagrama de Entidades e Relacionamentos (DER)**
   
-  ![Imagem](/documentacao/images/outros/der.png)
+  ![Imagem](/artefatos/dados/der.png)
   
   - **4.2. Impactos da implementação em um banco de dados NoSQL**
   
@@ -160,7 +160,7 @@ Exemplos de bancos de dados NoSQL: MongoDB, Apache CouchDB, Redis, HBase. | Exem
   
   - **4.3. Modelo relacional**
   
-![Imagem](/documentacao/images/outros/mer.png)
+![Imagem](/artefatos/dados/mer.png)
   
 **5. Relatórios analíticos**
 
