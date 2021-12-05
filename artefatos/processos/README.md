@@ -1,6 +1,6 @@
 # Lista dos processos de negócio do sistema
 
-# AS IS
+## AS IS
 
 ![Imagem](/artefatos/processos/ASIS/cadastroMoradores.png)
 ![Imagem](/artefatos/processos/ASIS/avisos.png)
@@ -9,7 +9,7 @@
 ![Imagem](/artefatos/processos/ASIS/areasLazer.png)
 ![Imagem](/artefatos/processos/ASIS/confirmaPresenca.png)
 
-# TO BE
+## TO BE
 
 ![Imagem](/artefatos/processos/TOBE/moradores.png)
 ![Imagem](/artefatos/processos/TOBE/avisos.png)
