@@ -2,8 +2,8 @@
 
 Este diretório mantém os artefatos relacionados à modelagem de dados do projeto. 
 
-* `diagrama entidade-relacionamento (DER)`
+* `Diagrama entidade-relacionamento (DER)`
 	  ![Imagem](/artefatos/dados/der.png)
 	  
-* `modelo relacional`
+* `Modelo relacional`
 	![Imagem](/artefatos/dados/mer.png)
